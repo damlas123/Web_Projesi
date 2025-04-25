@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giriş</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #2e2521;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .contact-container {
+      display: flex;
+      height: 100vh;
+      justify-content: center; 
+      align-items: center;
+    }
+
+    .panel-container {
+      display: flex;
+      width: 90%; 
+      max-width: 1200px;
+      height: 80%;
+      border-radius: 10px; 
+      overflow: hidden;
+    }
+
+    .left-panel {
+      flex: 1;
+      background-color: #3b342f;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px;
+      position: relative;
+    }
+
+    .left-panel h1 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .left-panel p {
+      margin: 5px 0;
+    }
+
+    .left-panel img {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .right-panel {
+      flex: 1;
+      background-color: #0e5303;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .form-control, .form-select {
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+
+    .btn-custom {
+      background-color: #2e2521;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .panel-container {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+      }
+
+      .left-panel, .right-panel {
+        padding: 20px;
+      }
+
+      .left-panel h1 {
+        font-size: 24px;
+      }
+
+      .form-control, .form-select {
+        font-size: 16px; 
+      }
+
+      .btn-custom {
+        width: 100%; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="contact-container">
+  <div class="panel-container">
+    <div class="left-panel">
+      <img src="images/e0ca5146d8d3744fc8658c7d4b5e461a.jpg" alt="Logo">
+   
+    </div>
+
+    <div class="right-panel">
+      <form action="login.php" method="post">
+        <input type="email" class="form-control" placeholder="Kullanıcı Adınızı Giriniz" required>
+        <input type="password" class="form-control" placeholder="Şifrenizi Giriniz" required>
+        <button type="submit" class="btn-custom">Gönder</button>
+        <button type="reset" class="btn-custom">Temizle</button>
+        <div class="form-group">
+            <label for="rememberMe" class="form-check-label" style="color:white;" mt="3">
+                <input type="checkbox" id="rememberMe" class="form-check-input">Beni hatırla
+            </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+if(isset($_POST['submit'])){
+  <a hred="hakkımda.html" ></a>
+}
+</body>
+</html>
