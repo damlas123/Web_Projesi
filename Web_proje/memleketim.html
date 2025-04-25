@@ -2,133 +2,254 @@
 <html lang="tr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gelecekte Yaşamak İstediğim Yer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelecekte Yaşamak İstediğim Yer</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <style>
-    .carousel-item img {
-      height: 500px;
-      object-fit: cover;
-      cursor: pointer;
-    }
+    <style>
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+            cursor: pointer;
+        }
 
-    .carousel-caption {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 1rem;
-      border-radius: 0.5rem;
-    }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
 
-    .carousel-caption h5 {
-      color: white;
-    }
+        .carousel-caption h5 {
+            color: white;
+        }
 
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
-  <header class="header text-center p-4 bg-light">
-    <h1>Gelecekte Yaşamak İstediğim Yer</h1>
-  </header>
+    <header class="header text-center p-4 bg-light">
+        <h1 style="color:rgb(1, 58, 1)">Gelecekte Yaşamak İstediğim Yer</h1>
+    </header>
 
-  <main class="main container my-5">
-    <section id="genelbilgi" class="info-section mb-5">
-      <h2>Kopenhag</h2>
-      <p>Kopenhag (Danca: København), Danimarka'nın başkenti ve en yüksek nüfuslu şehridir...</p>
-    </section>
+    <main class="main container my-5">
 
-    <section class="gallery-section">
-      <h2 class="mb-4">Şehirden Kareler</h2>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/Christiansborg_fra_Nikolaj_Kirken.jpg" class="d-block w-100" alt="Christiansborg" onclick="scrollToSection('christiansborg')">
-            <div class="carousel-caption">
-              <h5>Christiansborg Nikolaj Kirken</h5>
+
+        <section class="gallery-section">
+            <h2 class="mb-4" style="color: rgb(3, 81, 70);">Şehirden Kareler</h2>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/Christiansborg_fra_Nikolaj_Kirken.jpg" class="d-block w-100"
+                            alt="Christiansborg" onclick="scrollToSection('christiansborg')">
+                        <div class="carousel-caption">
+                            <h5>Christiansborg Nikolaj Kirken</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Frederiks-Kirke.jpg" class="d-block w-100" alt="Frederiks"
+                            onclick="scrollToSection('frederiks')">
+                        <div class="carousel-caption">
+                            <h5>Frederiks-Kirke</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kopenhag-nehir-nyhavn.jpg" class="d-block w-100" alt="Nyhavn"
+                            onclick="scrollToSection('nyhavn')">
+                        <div class="carousel-caption">
+                            <h5>Nyhavn</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/5ef20ccf8398c71a37ffed503d2923d6-Tivoli Gardens amusement park Copenhagen.jpeg"
+                            class="d-block w-100" alt="Tivoli" onclick="scrollToSection('tivoli')">
+                        <div class="carousel-caption">
+                            <h5>Tivoli Gardens</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Önceki</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Sonraki</span>
+                </button>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/Frederiks-Kirke.jpg" class="d-block w-100" alt="Frederiks" onclick="scrollToSection('frederiks')">
-            <div class="carousel-caption">
-              <h5>Frederiks-Kirke</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/kopenhag-nehir-nyhavn.jpg" class="d-block w-100" alt="Nyhavn" onclick="scrollToSection('nyhavn')">
-            <div class="carousel-caption">
-              <h5>Nyhavn</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/5ef20ccf8398c71a37ffed503d2923d6-Tivoli Gardens amusement park Copenhagen.jpeg" class="d-block w-100" alt="Tivoli" onclick="scrollToSection('tivoli')">
-            <div class="carousel-caption">
-              <h5>Tivoli Gardens</h5>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Önceki</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Sonraki</span>
-        </button>
-      </div>
-    </section>
+            <br><br>
+        </section>
+        <section id="genelbilgi" class="info-section mb-5">
+            <h1 style="color:rgb(3, 81, 70); text-align: center;">Kopenhag</h1>
+            <p>Kopenhag, Danimarka'nın başkenti ve en yüksek nüfuslu şehridir. 1 Ocak 2022 itibarıyla şehrin nüfusu
+                805.420'dir. Kopenhag, Zelanda adasının doğu kıyısında yer almaktadır; şehrin diğer kısmı Amager'de yer
+                alır ve Øresund boğazı ile İsveç'in Malmö kentinden ayrılır.
+                Aslen 10. yüzyılda, günümüzün Gammel Strand'ın (Türkçe: Eski plaj) yakınında bir Viking balıkçı köyü
+                olan kurulmuş olan Kopenhag, 15. yüzyılın başlarında Danimarka'nın başkenti oldu. 17. yüzyıldan
+                başlayarak, devlet kurumları, savunmaları ve silahlı kuvvetlerinin bu şehre taşınmasıyla Kopenhag'ın
+                bölgesel gücünü pekiştirdi. Rönesans döneminde şehir günümüzün İsveç ve Norveç'i de kapsayan Kalmar
+                Birliği'nin fiili başkenti olarak hizmet etti. Şehir, 15. yüzyıldan başlayarak ve İsveç'in birlikten
+                ayrıldığı 16. yüzyılın başına kadar 120 yıldan uzun bir süre Kalmar Birliği'nin başkenti olarak
+                İskandinavya'nın kültürel ve ekonomik merkezi olarak gelişti. 18. yüzyıldaki veba salgınlarından sonra
+                bir duraklama döneminden sonra şehir yeniden bir gelişme sürecinden geçti. Bu dönemde günümüzün
+                prestijli Frederiksstaden semti inşa edildi ve Kraliyet Tiyatrosu ve Kraliyet Güzel Sanatlar Akademisi
+                gibi kültür kurumları kuruldu. 19. yüzyılın başlarında Danimarka Altın Çağı sırasında yeniden yapılanan
+                Kopenhag mimarisi Neoklasik bir görünüm kazandırdı. İkinci Dünya Savaşı'ndan sonra ise devletin Parmak
+                Planı (Danca: Fingerplanen) ile şehir merkezinden ülkenin diğer yerlerine uzanan beş kentsel demiryolu
+                güzergahı boyunca konut ve işyerlerinin gelişimini teşvik edildi.
+           </p>
+           <p>
+                21. yüzyılın başından bu yana Kopenhag, kurumlarına ve altyapısına yapılan yatırımla kolaylaştırılan
+                güçlü bir kentsel ve kültürel gelişme gördü. Şehir, günümüzde Danimarka'nın kültürel, ekonomik ve
+                hükûmet merkezidir. Kuzey Avrupa'nın en önemli finans merkezlerinden biri olan Kopenhag Borsası'na ev
+                sahipliği yapan şehir özellikle bilgi teknolojisi, ilaç sanayiindeki girişimler yoluyla hizmet
+                sektöründe hızlı gelişmeler yaşadı. Øresund Köprüsü'nün tamamlanmasından bu yana Kopenhag, İsveç'in
+                Scania eyaleti ve Øresund Bölgesini oluşturan en büyük şehri Malmö ile giderek daha fazla entegre hale
+                geldi. Kopenhag'ın Tivoli Bahçeleri, Küçük Deniz Kızı heykeli, Amalienborg ve Christiansborg sarayları,
+                Rosenborg Kalesi Bahçeleri, Frederik Kilisesi ve birçok müze, restoran ve gece kulübü gibi simge
+                yapıları önemli turistik yerlerdir.
+           </p>
+           <p>
+                Şehir aynı zamanda Kopenhag Üniversitesi, Danimarka Teknik Üniversitesi, Kopenhag İşletme Okulu ve
+                Kopenhag BT Üniversitesi'ne ev sahipliği yapmaktadır. 1479'da kurulan Kopenhag Üniversitesi,
+                Danimarka'daki en eski üniversitedir. Kopenhag, FC København. Her yıl düzenlenen Kopenhag Maratonu
+                1980'de kurulmuştur. Kopenhag, dünyanın en bisiklet dostu şehirlerinden biridir.
+            </p>
+            <p>
+                2002 yılında başlatılan Kopenhag metrosu, Kopenhag'ın merkezine hizmet vermektedir. Ek olarak, Kopenhag
+                S-treni, Lokaltog (özel demiryolu) ve Sahil Hattı ağı, Kopenhag'ın merkezini uzaktaki ilçelere hizmet
+                etmekte ve bağlamaktadır. Ayda yaklaşık iki milyon yolcuya hizmet veren Kastrup Kopenhag Havalimanı
+                İskandinav ülkelerindeki en yoğun havalimanıdır.
+            </p>
+            <p>
+                "København" Dancada "ticaret limanı" veya "tüccar limanı" anlamındadır. Koben tüccar ve "havn" Dancada
+                "liman" demektir.
+            </p>
+            <p>
+                Şehir merkezinin ana yolu, City Hall Square'dan Kongens Nytorv'ya akan yaya caddesi olan Strøget'tır.
+                Şehir merkezi; Sortedam Gölü, Peblinge Gölü ve Skt Jørgens Gölü'nü içeren alandır ve hem şehrin orta
+                kısımlarını hem de Christianshavn'ı içine alır. Burası ayrıca Copenhagen K. olarak da bilinir.
+            </p>
+            <br><br>
 
-    <!-- Açıklama Bölümleri -->
-    <section id="frederiks" class="info-section mt-5">
-      <h3>Frederiks Kilisesi</h3>
-      <p>Frederiks Kirke, şehirdeki en güzel mimari örneklerden biridir...</p>
-    </section>
+            <h2 style="color:rgb(2, 77, 77)"> Kopenhag Havalimanı’ndan Şehir Merkezine Ulaşım</h2>
+            <p>Kopenhag şehir merkezinden metro, otobüs ve tramvay gibi toplu ulaşım araçlarını kullanarak oldukça
+                kolay bir biçimde şehir merkezine ulaşabilirsiniz. Havalimanının 3 numaralı terminalinden 5A numaralı
+                otobüse binerek ortalama 30 dakikalık bir sürede şehir merkezine ulaşabilirsiniz.
 
-    <section id="tivoli" class="info-section mt-4">
-      <h3>Tivoli Bahçeleri</h3>
-      <p>1843 yılında açılan bu eğlence parkı, dünyanın en eski lunaparklarından biridir...</p>
-    </section>
+                Daha hızlı bir alternatif olarak ise yine 3 numaralı terminalden tren seçeneğini kullanabilirsiniz.
+                Metro olarak ise M2 hattını kullanarak şehir merkezine rahatlıkla varabilirsiniz. Bunlar dışında taksi
+                seçeneğiniz de bulunmaktadır.
+                Havalimanı çıkışında bekleyen taksilerle şehir merkezine ulaşım sağlayabilirsiniz.
 
-    <section id="nyhavn" class="info-section mt-4">
-      <h3>Nyhavn Nehri</h3>
-      <p>Renkli evleri ve kanallarıyla ünlü Nyhavn, hem yerel halkın hem turistlerin uğrak noktasıdır...</p>
-    </section>
+            </p>
+            <br><br>
+            <h2 style="color:rgb(2, 77, 77)">Kopenhag'da Ne Yenir?</h2>
+            <p> Kopenhag, gastronomi alanında oldukça ünlü bir şehirdir. Şehirde birçok Michelin yıldızlı restoran
+                bulunmaktadır. Bu restoranlarda Danimarka mutfağının yanı sıra dünya mutfaklarından da lezzetler
+                bulabilirsiniz. Özellikle deniz ürünleri ve yerel malzemelerle hazırlanan yemekler oldukça popülerdir.
+                Ayrıca şehirde birçok kafe ve bar da bulunmaktadır. Bu mekanlarda Danimarka'nın ünlü kahvesini ve
+                pastalarını deneyebilirsiniz.
+            </p>
+        </section>
+        <br><br>
+        <h2 style="color:rgb(2, 77, 77)">Gezilecek Yerler:</h2>
 
-    <section id="christiansborg" class="info-section mt-4">
-      <h3>Christiansborg Sarayı</h3>
-      <p>Danimarka parlamentosunun merkezi olan bu saray...</p>
-    </section>
-  </main>
+        <section id="frederiks" class="info-section mt-5">
+            <h3 style="color:rgb(2, 77, 77)">Frederiks Kilisesi</h3>
+            <p>Kilise, mimar Nicolai Eigtved tarafından 1740 yılında tasarlanmış ve Kopenhag'ın Frederiksstaden
+                semtindeki diğer yapılarla birlikte , Oldenburg Hanedanı'ndan bir üyenin ilk taç giyme töreninin 300.
+                yıl dönümünü anmak amacıyla inşa edilmiştir .
 
-  <footer class="footerpart text-center p-3 bg-light">
-    <a href="miras.html" target="_blank">
-      <p class="mb-0">Mirasımız:</p>
-    </a>
-  </footer>
+                Frederick Kilisesi, 31 m'lik açıklığıyla İskandinavya'nın en büyük kilise kubbesine sahiptir . Eigtved
+                kilisenin çizimlerini 1740 civarında tamamladı, ancak orijinal tasarımı çok daha gösterişliydi; kubbe
+                önemli ölçüde daha uzun olmalı ve 45 m çapında dış duvarlara dayanmalıydı. Kubbe 12 sütun üzerinde
+                duruyor. Kubbe, kavisli, gösterişli ifadesi ve çok sayıda ince detayı ile Roma barok tarzındadır.
+                Altın pencere çerçeveleri, dış duvarlarda çok sayıda heykel ve kubbe tavanının içinde büyük olasılıkla
+                Roma'daki Petrus Bazilikası'ndan esinlenen güzel, renkli freskler vardır.
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            </p>
+        </section>
+        <br><br>
+        <section id="tivoli" class="info-section mt-4">
+            <h3 style="color:rgb(2, 77, 77)">Tivoli Bahçeleri</h3>
+            <p>Tivoli, genç ve yaşlılar için bir oyun alanı ve Hans Christian Andersen ve Walt Disney'e ilham veren
+                harikalarla dolu bir yer. İster bahçeler, ister müzik, ister gezintiler için gelin, çok eğleneceksiniz.
 
-  <!-- Scroll Fonksiyonu -->
-  <script>
-    function scrollToSection(id) {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  </script>
+                Tivoli Bahçeleri 1843 yılında kurulmuş ve ulusal bir hazine ve uluslararası bir cazibe merkezi haline
+                gelmiştir. Masal yazarı Hans Christian Andersen burayı birçok kez ziyaret etmiştir, hatta Walt Disney
+                bile kendi Disney Dünyası için ilhamı burada bulmuştur. Bahçe kurulduğunda şehrin hendeklerinin dışına
+                yerleştirilmişti, ancak bugün Merkez istasyonunun hemen yanında ve Belediye Binası'na yürüme mesafesinde
+                yer almaktadır.
+
+                Tivoli Bahçeleri'nin sırrının bir kısmı, herkes için bir şeyler olmasıdır. Egzotik mimarisi, tarihi
+                binaları ve yemyeşil bahçeleriyle manzarası güzeldir. Geceleri binlerce renkli ışık, tamamen benzersiz
+                bir masal atmosferi yaratır. Gariplikleri ve çekiciliği vardır ve keşfedebileceğiniz detayları vardır -
+                bahçelerde özgürce koşan gine tavuklarını veya tavus kuşlarını görebilirsiniz. </p>
+        </section>
+        <br><br>
+        <section id="nyhavn" class="info-section mt-4">
+            <h3 style="color:rgb(2, 77, 77)">Nyhavn Nehri</h3>
+            <p>Nyhavn, Kopenhag, Danimarka'da 17. yüzyıldan kalma bir sahil, kanal ve eğlence bölgesidir. Kongens
+                Nytorv'dan Royal Playhouse'un hemen güneyindeki İç Liman'a kadar uzanan bölge, 17. ve 18. yüzyılın
+                başlarından kalma parlak renkli şehir evleri ve barlar, kafeler ve restoranlarla kaplıdır.</p>
+        </section>
+        <br><br>
+        <section id="christiansborg" class="info-section mt-4">
+            <h3 style="color:rgb(2, 77, 77)">Christiansborg Sarayı</h3>
+            <p> Elias David Häusser , Christian Frederik Hansen , Thorvald Jørgensen
+                Saray böylece üç yüce güce ev sahipliği yapar: yürütme gücü , yasama gücü ve yargı gücü . Bir ülkenin üç
+                hükümet kolunu da barındıran dünyadaki tek binadır. Christiansborg adı bu nedenle sıklıkla Danimarka
+                siyasi sistemi için bir metonim olarak kullanılır ve günlük dilde genellikle Rigsborgen ('krallığın
+                kalesi') veya sadece Borgen ('kale') olarak anılır . 
+
+                Bu ismi taşıyan üçüncü bina, 1167'de ilk kalenin inşasından bu yana aynı alanda inşa edilen bir dizi
+                kale ve sarayın sonuncusudur. Çeşitli binalar onbeşinci yüzyılın başlarından beri merkezi yönetimin üssü
+                olarak hizmet vermiştir; 1794'e kadar Danimarka krallarının başlıca ikametgahı ve 1849'dan sonra da
+                parlamento merkezi olarak kullanılmıştır.
+
+                Saray bugün, iki ciddi yangının sonucu olarak Danimarka mimarisinin üç dönemine tanıklık ediyor. İlk
+                yangın 1794'te, ikincisi ise 1884'te meydana geldi. 1928'de tamamlanan mevcut sarayın ana kısmı,
+                tarihselci Neo-barok tarzındadır. Şapel 1826'ya kadar uzanıyor ve neoklasik bir tarzda. Sergi alanları
+                1738'den 1746'ya kadar barok tarzda inşa edildi.
+
+                Christiansborg Sarayı, Danimarka Hükümeti'ne aittir ve Saraylar ve Mülkler Ajansı tarafından yönetilir.
+                Sarayın çeşitli bölümleri halka açıktır.</p>
+        </section>
+    </main>
+
+    <footer class="footerpart text-center p-3 bg-light">
+        <a href="miras.html" target="_blank">
+            <p class="mb-0">Mirasımız:</p>
+        </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
 
 </html>
