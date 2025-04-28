@@ -11,3 +11,4 @@ if ($_POST['name'] === $kullanici && $_POST['password'] === $sifre) {
     exit;
 }
 ?>
+
