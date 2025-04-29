@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miras</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+       .carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .carousel-caption h5 {
+            color: white;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header text-center p-4 bg-light">
+        <h1 style="color:rgb(1, 58, 1)">Miras</h1>
+    </header>
+
+    <main class="main container my-5">
+
+
+        <section class="gallery-section">
+            <h2 class="mb-4" style="color: rgb(3, 81, 70);">Fotoğraflar</h2>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/B-Danimarka.jpg" class="d-block w-100" alt="Futbol"
+                            onclick="scrollToSection('Futbol')">
+                        <div class="carousel-caption">
+                            <h5>Milli Takım</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img_1190.webp" class="d-block w-100" alt="Yemekler"
+                            onclick="scrollToSection('Yemekler')">
+                        <div class="carousel-caption">
+                            <h5>Yemekler</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/220.gif" class="d-block w-100" alt="Charles"
+                            onclick="scrollToSection('Charles')">
+                        <div class="carousel-caption">
+                            <h5>Charles Lauritsen</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Metallica-Lars-Ulrich.jpg" class="d-block w-100" alt="metallica"
+                            onclick="scrollToSection('metallica')">
+                        <div class="carousel-caption">
+                            <h5>Lars Ulrich</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Önceki</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Sonraki</span>
+                </button>
+            </div>
+            <br><br>
+        </section>
+        <section id="genelbilgi" class="info-section mb-5">
+            <h1 style="color:rgb(3, 81, 70); text-align: center;">Genel Kültür</h1>
+            <p>Danimarka'nın başkenti Kopenhag, İskandinavya'nın giriş kapısıdır. Bayat Danimarka klişelerinin, son
+                teknoloji çağdaş mimarinin ortasında iş yemeği yiyen iyi giyimli yöneticilerin ve Avrupa'nın en çılgın
+                karşı kültürünün inanılmaz bir birleşimidir. Ve yine de, hepsi çok düzgün bir şekilde birlikte çalışır.
+                Kanallarda dolaşarak, sarayda dolaşarak ve eski şehirde yürüyüşe çıkarak yoğun bir gün geçirmek size
+                tarihi yönünüzü verecektir. Ardından, Strøget'te (Avrupa'nın ilk ve en büyük yaya alışveriş merkezi)
+                dolaşarak, kanallarda bisiklet sürerek ve Danimarka'nın güzel hayatını deneyimleyerek geçirdiğiniz bir
+                günün ardından kendinizi evinizde hissedeceksiniz. İskandinavya'nın en ucuz ve en eğlenceyi seven
+                başkentinde hayatınızın tadını çıkarın.
+            </p>
+
+            <br><br>
+
+
+            <section id="Charles" class="info-section mt-5">
+                <br>
+                <h3 style="color:rgb(2, 77, 77)">Charles Christian Lauritsen </h2>
+                    <h2>Charles Christian Lauritsen (4 Nisan 1892 - 13 Nisan 1968) Danimarkalı-Amerikalı fizikçi.</h1>
+                        <p> Yıllar içinde Lauritsen'in araştırma grubunun gerçekleştirdiği keşifler; nükleer astrofizik,
+                            radyoterapi
+                            (özellikle radyasyon dozimetrisi), ayna çekirdekleri ve yük simetrisi, nükleer beta
+                            bozunumu, güneş
+                            enerjisi, atom spektroskopisi, nükleosentezin zaman ölçekleri ve katı hal fiziği gibi
+                            alanlarda
+                            önemli etkiler yaratmıştır. II. Dünya Savaşı sırasında, ABD'nin silah cephaneliğine
+                            roketlerin
+                            eklenmesinde kritik bir rol oynamıştır. Savaş sonrasında, ABD hükûmetine bilimsel ve askerî
+                            konularda düzenli ve saygın bir danışman olarak hizmet vermiş ve Soğuk Savaş döneminin büyük
+                            bir
+                            bölümünde Amerikan savunma politikasının şekillenmesine katkıda bulunmuştur.
+                        </p>
+                        <br>
+                        <h3>Erken yaşam</h3>
+                        <p>
+                            Danimarka'nın Holstebro kentinde doğdu ve Odense Tekniske Skole'de mimarlık eğitimi alarak
+                            1911
+                            yılında mezun oldu. 1916 yılında eşi Sigrid Henriksen ve oğlu Tommy ile birlikte Amerika
+                            Birleşik
+                            Devletleri'ne göç etti; önce ailenin bir süre yüzen evde yaşadığı Florida'ya, daha sonra da
+                            I. Dünya
+                            Savaşı sırasında ressam olarak çalıştığı ve Boston Pekmez Felaketi'ne tanık olduğu Boston'a
+                            yerleşti. 1921'de Palo Alto'da gemi ile kıyı arasında iletişimi sağlayan telsizler üzerinde
+                            çalışmalar yaptı. Radyo alıcılarının tasarımına ilgi duydu ve 1922'de birkaç ay boyunca iki
+                            ortakla
+                            birlikte garaj kiralayarak radyo üreten bir iş girişiminde bulundu. 1923'te St. Louis'e
+                            taşınarak,
+                            burada tüketici radyo alıcıları üreten Kennedy Corporation'da baş mühendis olarak çalışmaya
+                            başladı.
+                        </p><br>
+                        <h3> Kariyer</h3>
+                        <p>
+
+                            Milikan ile tanışma ve Caltech
+                            1926'da Robert Millikan'ın halka açık bir konferansına katıldı. Milikan, bir sohbet
+                            sırasında onu
+                            Kaliforniya Teknoloji Enstitüsü'nü ziyaret etmeye davet etti. Lauritsen ailesiyle beraber
+                            kısa süre
+                            sonra Pasadena'ya taşındı ve burada fizik alanında lisansüstü eğitim almaya başladı. Eğitim
+                            aldığı
+                            süre boyunca; Epstein, Smythe, Tolman, Bowen, Zwicky ve Bateman gibi fizikçilerin dersinde
+                            bulundu.
+                            1929'da Milikan'ın danışmanlığında Electron Emission from Metals in Intense Electron Fields
+                            teziyle
+                            doktorasını alarak, 1962 yılındaki emekliliğine kadar akademik yaşamının tamamını geçireceği
+                            ve
+                            fizik bölümüne katıldı. Sırasıyla; 1930'da yardımcı doçent, 1931'de doçent, 1935'te
+                            profesör,
+                            1962'de emeritus profesör oldu.[2]
+                        </p><br>
+                        <h3>
+                            Nükleer fizik</h3>
+                        <p>
+                            1928 yılında Ralph D. Bennett ile birlikte son derece yüksek voltajlı X ışını tüpleri
+                            geliştirdi. Bu
+                            tüpler daha sonra, 1931 yılında bir tedavi kliniği olarak inşa edilen Kellogg Radyasyon
+                            Laboratuvarı'nda kanser hastalarının radyasyon tedavisi için kullanıldı. 1932'de X ışını
+                            tüplerinden
+                            birini proton ve helyum iyonları hızlandırıcısına dönüştürerek nükleer reaksiyonları
+                            araştırmaya
+                            başladı. 1934'te H. Richard Crane ile birlikte Kaliforniya Üniversitesi'ndeki, Gilbert
+                            Lewis'ten
+                            aldıkları yeni keşfedilmiş bir döteryum örneğini nötron üretmek için kullandılar ve bu
+                            nötronları
+                            hızlandırıcı tarafından üretilen ilk yapay radyoaktiviteyi oluşturmak için kullandılar. Daha
+                            sonra
+                            bir pozitron ve bir elektron birbirini yok ettiğinde ortaya çıkan radyasyonu ölçtü. En
+                            önemli
+                            keşiflerinden biri, protonların bir karbon çekirdeği tarafından yakalanarak gama ışınları
+                            açığa
+                            çıkarabileceğini göstermesiydi. Bu radyatif yakalama süreci, bir yıldızın çekirdeğindeki
+                            nükleer
+                            süreçlerin ve daha ağır elementlerin üretiminin araştırılmasında kullanıldı.[3] 1939'a
+                            gelindiğinde
+                            laboratuvar tıbbi tedaviyi durdurdu ve nükleer fiziğe yoğunlaştı.[4] Lauritsen, kuruluşundan
+                            1968'deki ölümüne kadar 30 yıldan fazla bir süre laboratuvarın müdürü olarak görev yaptı[5]
+                        </p><br>
+                        <h3>
+                            Silah geliştirme</h3>
+                        <p>
+                            ABD'nin II. Dünya Savaşı'na girmesinden bir yıldan fazla bir süre önce, Lauritsen silahlar
+                            ve silah
+                            tasarımı üzerinde çalışmaya başladı. İlk çalışması yakınlık tapasının tasarımı ve
+                            geliştirilmesiydi,
+                            ancak savaşın büyük bölümünde Caltech'te çoğunlukla donanma için çeşitli roket silahları
+                            geliştiren
+                            ve üreten büyük bir program yürüttü. Bu bağlamda, Inyokern, Kaliforniya'da Donanma Mühimmat
+                            Test
+                            İstasyonu'nun (şimdi Donanma Hava Harp Merkezi) kurulmasına yardımcı oldu. Savaşın son
+                            aylarında,
+                            Fat Man bombasının yüksek patlayıcılı bir kopyası olan "Pumpkin bomb "ın geliştirilmesi de
+                            dahil
+                            olmak üzere, Amerika'nın atom bombası tasarlama ve üretme çabalarına katkıda bulundu. Savaşı
+                            takip
+                            eden yıllarda silah çalışmalarına devam etti ve çalışmalarının çoğu gizli tutuldu. Hartwell
+                            Projesi,
+                            Charles Projesi, Michael Projesi ve Vista Projesi de dahil olmak üzere bir dizi önemli
+                            projede yer
+                            aldı. İnçon Muharebesi'nden hemen sonra ön saflarda Savunma Bakanlığı için Amerikan
+                            silahlarını
+                            gözlemledi ve değerlendirdi.
+                        </p>
+            </section>
+            <br><br>
+            <section id="metallica" class="info-section mt-4">
+                <h3 style="color:rgb(2, 77, 77)">Lars Ulrich</h3>
+                <p>Lars Ulrich (d. 26 Aralık 1963), Danimarkalı müzisyen, besteci ve müzik prodüktörü. Amerikalı heavy
+                    metal grubu Metallica'nın kurucularından biri ve bateristi olarak tanınır. Gentofte, Danimarka
+                    doğumludur. Orta hâlli bir ailenin çocuğu olarak dünyaya gelmiştir. Küçük yaşlarında tenis oynamaya
+                    başlamıştır. 1980 yılında, Lars 16 yaşındayken tenis kariyerini ilerletmesi için Los Angeles, ABD'ye
+                    taşınmışlardır. Fakat Los Angeles'a ilk adım attığı günden itibaren Lars, müziğin kaderi olduğunu
+                    anlamış ve tenis oynamaktansa bateriye olan ilgisini keşfedip müziğe yoğunlaşmaya başlamıştır. Los
+                    Angeles gazetesi The Recycler'a ilan vererek James Hetfield'la tanışmıştır ve Metallica'yı
+                    kurmuşlardır. </p>
+                <p>Lars, 26 Aralık 1963'te ünlü tenis oyuncusu Torben Ulrich'in oğlu olarak dünyaya gelmiştir. Ünlü
+                    saksofonist Dexter Gordon aynı zamanda Lars'ın vaftiz babasıdır. 1973 Şubat'ında Torben, tenis
+                    turnuvalarının da gerçekleştiği Kopenhag stadyumunda gerçekleşecek olan efsane Hard Rock grubu Deep
+                    Purple'ın konserine 5 arkadaşı için 5 bilet almıştı. Arkadaşlarından birinin konsere gelemeyeceği
+                    kesinleştiğinde, bilet 9 yaşındaki Lars'a geçmişti. Genç Ulrich, konserden olağanüstü biçimde
+                    etkilenmiş ve ertesi gün grubun Fireball albümünü satın almıştır. Grup ve albüm Lars'ı hard rock ve
+                    daha sonrasında da heavy metal dünyasının içine sürükleyen etkenlerden başlıcaları olmuşlardır.
+                    Müziğe olan ilgisinin sonucu olarak, 12 yaşındayken babaannesi tarafından kendisine Ludwig marka ilk
+                    bateri seti verilmiştir. 1980 yılında aile Amerika Birleşik Devletleri'ne taşınmıştır.</p>
+                <p>Downey, Kaliforniya'da James Hetfield ile tanıştığı yıl olan 1981'de thrash metal grubu Metallica'yı
+                    kurdu. Lars, grubun ismini hazırlayacağı fanzin için isim arayan arkadaşı Ron Quintana'dan almıştır.
+                    Metal Mania ve Metallica seçenekleri arasında kalan Quintana'yı fanzinin ismini Metal Mania yapmaya
+                    ikna eden Ulrich, Metallica ismini kendisi kullanmıştır. Ulrich hızlı ve sert thrash ritimlerinde
+                    bir öncü olması ile ünlenmiştir. Bunun en belirgin örnekleri Kill'em All albümünden Metal Militia,
+                    Ride the Lightning albümünden Fight Fire With Fire, Master of Puppets albümünden Battery ve Damage
+                    Inc. ve ...And Justice for All albümünden One isimli şarkılarda duyulabilir. Bateri teknikleri ile
+                    olduğu kadar grubunun popülaritesi ile de en ilham verici bateristlerden biri olmuştur. En bilindik
+                    teknikleri arasında One şarkısında kullandığı double bass tekniği ve Enter Sandman şarkısının
+                    başında sergilediği akıllıca tom kombinasyonları gösterilebilir. Metallica albümünden sonra Lars,
+                    tekniğini daha odaklı kesin hâle getirmek adına 9 parçalı bateri setini 7 parçaya çekmiştir.
+
+                    Ulrich'in sesi birkaç Metallica parçasında duyulabilir. Bunların arasında Hero of the Day, Battery,
+                    The Memory Remains, Enter Sandman, Unforgiven II, Frantic ve Purify bulunur. Ulrich'in sesi aynı
+                    zamanda Leper Messiah şarkısının başında ve St.Anger şarkısının video klibinde de duyulabilir.
+                    Klibin başında Ulrich, Danca 4'e kadar saymaktadır.
+
+                    Ulrich, 2009 yapımı Hollywood filmi Get Him to the Greek'te Jackie Q karakterinin partneri olarak
+                    rol almakla beraber, 28 Mayıs 2012'de vizyona giren Hemingway&Gellhorn filminde de rol almıştır.
+
+                    2012 yılında, Ulrich "Mission To Lars" belgeselinin odağı olmuştur. Kate ve Will Spicer imzalı
+                    belgesel, Frajil X sendromu hastası olan ve Devon, İngiltere'de bir bakım merkezinde kalan
+                    kardeşleri Tom'un, Metallica'nın 2009 yılında Kaliforniya'da verdiği konserlerden birinde Lars ile
+                    tanışma çabalarını belgelemektedir.
+
+                    Ulrich aynı zamanda That Metal Show adlı televizyon programının seçtiği en iyi 5 metal bateristi
+                    sıralamasında 5. sırada yer almıştır.</p>
+            </section>
+            <br><br>
+            <section id="Yemekler" class="info-section mt-4">
+                <h3 style="color:rgb(2, 77, 77)">Yemekler</h3>
+                <p>Geleneksel Danimarka yemekleri, Danimarka'nın kısa yazları boyunca yakınlarda bulunan veya
+                    yetiştirilebilen yiyeceklere dayanır. Lahana ve pancar gibi kök sebzeler, çavdar ekmeği, balık ve
+                    domuz etiyle birlikte diyetin önemli bir parçasıydı. Smørrebrød olarak bilinen açık sandviçler ,
+                    geleneksel Danimarka mutfağının en bilinen örnekleri arasındadır.
+                    Bu küçük yarım çavdar ekmeği parçaları kızarmış balık, salamura balık, yumurta, patates veya soğuk
+                    et ve bazen yaban turpu ve soğanla kaplanır. Öğle yemeğinde, paketlenmiş bir öğle yemeğinin parçası
+                    olarak veya bir şirket kantininde yenir. Daha büyük geleneksel yemekler genellikle balık veya domuz
+                    etine dayanır, bazen kıyma ve köfte olarak kızartılır. "Danimarka'nın ulusal yemeği" stegt flæsk'tir
+                    - çıtır çıtır olana kadar kızartılmış ve ardından haşlanmış patates ve maydanoz sosuyla servis
+                    edilen domuz parçaları.
+                </p>
+                <p>Danimarkalılar tatlıları, özellikle de kekleri severler. İster Hindistan cevizi ve esmer şekerle
+                    yapılmış ev yapımı drømmekage (rüya keki) olsun , ister ülkenin birçok fırınından birinden gelen
+                    gösterişli bir çilekli tart olsun, hiçbir kutlama yemeği kek olmadan tamamlanmış sayılmaz.
+
+
+
+                    Ayrıca Danimarkalılar çikolataya ve meyan köküne, özellikle tuzlu meyan köküne tutkuludur.
+                    Danimarka'nın Bornholm adasında doğan bir şekerlemeci olan Johan Bülow, ahududu ve yerel bir meyve
+                    olan deniz iğdesi gibi ek tatlarla kaplanmış çikolata kaplı meyan kökü seçkisiyle uluslararası bir
+                    sansasyon yarattı.</p>
+            </section>
+            <br><br>
+            <section id="Futbol" class="info-section mt-4">
+                <h3 style="color:rgb(2, 77, 77)">Milli Takım</h3>
+                <p> Danimarka Millî Takımı'nın futbol sahnesinde parlamaya başladığı yıllar, Sepp Piontek'li 1980'leri
+                    gösteriyor. 1992'de Yugoslavya'nın yerine tatilden dönerek katıldıkları Avrupa Şampiyonası'nda hiç
+                    kimsenin beklemediği bir biçimde zafere ulaştılar. Sonrasında istikrarsız bir takım görüntüsü
+                    çizseler de son iki büyük turnuvanın finallerine katılmayı başardılar. 2014 Dünya Kupası
+                    elemelerinde ise pek iyi bir konumda oldukları söylenemez.</p>
+            </section>
+    </main>
+
+    <footer class="footerpart text-center p-3 bg-light">
+        <a href="hakkımda.html" target="_blank">
+            <p class="mb-0">Ana sayfa</p>
+        </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+
+</html>

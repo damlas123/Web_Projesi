@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Form Sonuçları</title>
+</head>
+
+<body>
+  <h1>Form Sonuçları</h1>
+  <div id="sonuclar"></div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const sonuclarDiv = document.getElementById("sonuclar");
+
+    params.forEach((value, key) => {
+      const p = document.createElement("p");
+      p.textContent = `${key}: ${value}`;
+      sonuclarDiv.appendChild(p);
+    });
+  </script>
+</body>
+
+</html>

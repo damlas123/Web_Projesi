@@ -117,21 +117,20 @@
 
     <div class="right-panel">
       <form action="login.php" method="post">
-        <input type="email" class="form-control" placeholder="Kullanıcı Adınızı Giriniz" required>
-        <input type="password" class="form-control" placeholder="Şifrenizi Giriniz" required>
+        <input type="email" class="form-control" name="email" placeholder="Kullanıcı Adınızı Giriniz" required>
+        <input type="password" class="form-control" name="password" placeholder="Şifrenizi Giriniz" required>
         <button type="submit" class="btn-custom">Gönder</button>
         <button type="reset" class="btn-custom">Temizle</button>
         <div class="form-group">
-            <label for="rememberMe" class="form-check-label" style="color:white;" mt="3">
-                <input type="checkbox" id="rememberMe" class="form-check-input">Beni hatırla
-            </label>
+          <label for="rememberMe" class="form-check-label" style="color:white;" mt="3">
+            <input type="checkbox" id="rememberMe" class="form-check-input"> Beni hatırla
+          </label>
         </div>
       </form>
+      
     </div>
   </div>
 </div>
-if(isset($_POST['submit'])){
-  <a hred="hakkımda.html" ></a>
-}
+
 </body>
 </html>
