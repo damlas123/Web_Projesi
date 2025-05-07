@@ -88,11 +88,11 @@
       <textarea v-model="mesaj" rows="4"></textarea>
       <div class="error">{{ hatalar.mesaj }}</div>
 
-      <label>Hobiler:</label>
+      <label>Size geri dönüş yapmamızı ister misiniz?:</label>
       <div>
-        <label><input type="checkbox" value="Kitap" v-model="hobiler" /> Kitap</label>
-        <label><input type="checkbox" value="Müzik" v-model="hobiler" /> Müzik</label>
-        <label><input type="checkbox" value="Spor" v-model="hobiler" /> Spor</label>
+        <label><input type="checkbox" value="Evet" v-model="Geridönüş"  /> Evet</label>
+        <label><input type="checkbox" value="Hayır" v-model="Geridönüş" /> Hayır</label>
+        <label><input type="checkbox" value="Belki" v-model="Geridönüş" /> Belki</label>
       </div>
 
       <br />
@@ -101,7 +101,7 @@
       </a>
       <button type="reset">Temizle</button>
       <button type="submit">Gönder</button>
-      <!-- İki farklı gönderme butonu -->
+    
       <button type="button" @click="vueKontrol">Vue.js ile Gönder</button>
       <button type="button" onclick="jsKontrol()">JavaScript ile Gönder</button>
     </form>
@@ -116,7 +116,7 @@
         telefon: '',
         cinsiyet: '',
         mesaj: '',
-        hobiler: [],
+        Geridönüş: [],
         hatalar: {}
       },
       methods: {
@@ -135,7 +135,7 @@
               telefon: this.telefon,
               cinsiyet: this.cinsiyet,
               mesaj: this.mesaj,
-              hobiler: this.hobiler.join(', ')
+              Geridönüş: this.Geridönüş.join(', ')
             });
 
             window.location.href = `sonuc.html?${params.toString()}`;
@@ -152,7 +152,7 @@
       const cinsiyet = document.querySelector("select").value;
       const mesaj = document.querySelector("textarea").value.trim();
 
-      const hobiler = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
+      const Geridönüş = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
 
       const hatalar = {};
 
@@ -171,7 +171,7 @@
           telefon,
           cinsiyet,
           mesaj,
-          hobiler: hobiler.join(", ")
+          Geridönüş: Geridönüş.join(", ")
         });
       
         window.location.href = `sonuc.html?${params.toString()}`;
