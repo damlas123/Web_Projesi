@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "<script>
                 alert('Hatalı kullanıcı adı veya şifre!');
-                window.location.href = 'login.html';
+                window.location.href = 'index.html';
               </script>";
         exit;
     }
