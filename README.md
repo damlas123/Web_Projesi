@@ -1,3 +1,1 @@
-# Web_Projesi
- Web Teknolojileri dersinde verilen ödeve için kurulmuş repository
-Projede istenen her şey yapılmıştır.
+Web Teknolojileri dersinde verilen proje kapsamında yapılan çalışma
